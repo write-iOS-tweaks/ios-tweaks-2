@@ -1,0 +1,9 @@
+Package: com.yourcompany.nodatelock
+Name: NoDateLock
+Depends: mobilesubstrate
+Version: 0.0.1
+Architecture: iphoneos-arm
+Description: Hides the date and time from the lockscreen
+Maintainer: Zim
+Author: Zim
+Section: Tweaks

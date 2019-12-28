@@ -1,0 +1,10 @@
+Package: com.yourcompany.ccbgcolor
+Name: CCBGColor
+Depends: mobilesubstrate
+Architecture: iphoneos-arm
+Description: An awesome MobileSubstrate tweak!
+Maintainer: Zim
+Author: Zim
+Section: Tweaks
+Version: 0.0.1-30+debug
+Installed-Size: 136
