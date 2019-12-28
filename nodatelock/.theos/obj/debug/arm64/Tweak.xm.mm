@@ -1,7 +1,4 @@
 #line 1 "Tweak.xm"
-@interface SBLockScreenViewController
-@end
-
 
 #include <substrate.h>
 #if defined(__clang__)
@@ -24,9 +21,11 @@
 #endif
 
 @class SBLockScreenViewController; 
-static double (*_logos_orig$_ungrouped$SBLockScreenViewController$_effectiveOpacityForVisibleDateView)(_LOGOS_SELF_TYPE_NORMAL SBLockScreenViewController* _LOGOS_SELF_CONST, SEL); static double _logos_method$_ungrouped$SBLockScreenViewController$_effectiveOpacityForVisibleDateView(_LOGOS_SELF_TYPE_NORMAL SBLockScreenViewController* _LOGOS_SELF_CONST, SEL); static BOOL (*_logos_orig$_ungrouped$SBLockScreenViewController$_shouldShowDate)(_LOGOS_SELF_TYPE_NORMAL SBLockScreenViewController* _LOGOS_SELF_CONST, SEL); static BOOL _logos_method$_ungrouped$SBLockScreenViewController$_shouldShowDate(_LOGOS_SELF_TYPE_NORMAL SBLockScreenViewController* _LOGOS_SELF_CONST, SEL); 
+static double (*_logos_orig$_ungrouped$SBLockScreenViewController$_effectiveOpacityForVisibleDateView)(_LOGOS_SELF_TYPE_NORMAL SBLockScreenViewController* _LOGOS_SELF_CONST, SEL); static double _logos_method$_ungrouped$SBLockScreenViewController$_effectiveOpacityForVisibleDateView(_LOGOS_SELF_TYPE_NORMAL SBLockScreenViewController* _LOGOS_SELF_CONST, SEL); static BOOL (*_logos_orig$_ungrouped$SBLockScreenViewController$_shouldShowDate)(_LOGOS_SELF_TYPE_NORMAL SBLockScreenViewController* _LOGOS_SELF_CONST, SEL); static BOOL _logos_method$_ungrouped$SBLockScreenViewController$_shouldShowDate(_LOGOS_SELF_TYPE_NORMAL SBLockScreenViewController* _LOGOS_SELF_CONST, SEL); static void (*_logos_orig$_ungrouped$SBLockScreenViewController$_addDateView)(_LOGOS_SELF_TYPE_NORMAL SBLockScreenViewController* _LOGOS_SELF_CONST, SEL); static void _logos_method$_ungrouped$SBLockScreenViewController$_addDateView(_LOGOS_SELF_TYPE_NORMAL SBLockScreenViewController* _LOGOS_SELF_CONST, SEL); 
 
-#line 4 "Tweak.xm"
+#line 1 "Tweak.xm"
+@interface SBLockScreenViewController
+@end
 
 static double _logos_method$_ungrouped$SBLockScreenViewController$_effectiveOpacityForVisibleDateView(_LOGOS_SELF_TYPE_NORMAL SBLockScreenViewController* _LOGOS_SELF_CONST __unused self, SEL __unused _cmd){
 	return 0;
@@ -34,7 +33,9 @@ static double _logos_method$_ungrouped$SBLockScreenViewController$_effectiveOpac
 static BOOL _logos_method$_ungrouped$SBLockScreenViewController$_shouldShowDate(_LOGOS_SELF_TYPE_NORMAL SBLockScreenViewController* _LOGOS_SELF_CONST __unused self, SEL __unused _cmd){
 	return NO;
 }
+static void _logos_method$_ungrouped$SBLockScreenViewController$_addDateView(_LOGOS_SELF_TYPE_NORMAL SBLockScreenViewController* _LOGOS_SELF_CONST __unused self, SEL __unused _cmd){
+}
 
 static __attribute__((constructor)) void _logosLocalInit() {
-{Class _logos_class$_ungrouped$SBLockScreenViewController = objc_getClass("SBLockScreenViewController"); MSHookMessageEx(_logos_class$_ungrouped$SBLockScreenViewController, @selector(_effectiveOpacityForVisibleDateView), (IMP)&_logos_method$_ungrouped$SBLockScreenViewController$_effectiveOpacityForVisibleDateView, (IMP*)&_logos_orig$_ungrouped$SBLockScreenViewController$_effectiveOpacityForVisibleDateView);MSHookMessageEx(_logos_class$_ungrouped$SBLockScreenViewController, @selector(_shouldShowDate), (IMP)&_logos_method$_ungrouped$SBLockScreenViewController$_shouldShowDate, (IMP*)&_logos_orig$_ungrouped$SBLockScreenViewController$_shouldShowDate);} }
-#line 12 "Tweak.xm"
+{Class _logos_class$_ungrouped$SBLockScreenViewController = objc_getClass("SBLockScreenViewController"); MSHookMessageEx(_logos_class$_ungrouped$SBLockScreenViewController, @selector(_effectiveOpacityForVisibleDateView), (IMP)&_logos_method$_ungrouped$SBLockScreenViewController$_effectiveOpacityForVisibleDateView, (IMP*)&_logos_orig$_ungrouped$SBLockScreenViewController$_effectiveOpacityForVisibleDateView);MSHookMessageEx(_logos_class$_ungrouped$SBLockScreenViewController, @selector(_shouldShowDate), (IMP)&_logos_method$_ungrouped$SBLockScreenViewController$_shouldShowDate, (IMP*)&_logos_orig$_ungrouped$SBLockScreenViewController$_shouldShowDate);MSHookMessageEx(_logos_class$_ungrouped$SBLockScreenViewController, @selector(_addDateView), (IMP)&_logos_method$_ungrouped$SBLockScreenViewController$_addDateView, (IMP*)&_logos_orig$_ungrouped$SBLockScreenViewController$_addDateView);} }
+#line 13 "Tweak.xm"

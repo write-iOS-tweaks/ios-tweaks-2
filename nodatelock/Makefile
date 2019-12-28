@@ -4,7 +4,7 @@ include ~/theos/makefiles/common.mk
 
 TWEAK_NAME = NoDateLock
 
-CCBGColor_FILES = Tweak.xm
-CCBGColor_CFLAGS = -fobjc-arc
+NoDateLock_FILES = Tweak.xm
+NoDateLock_CFLAGS = -fobjc-arc
 
 include ~/theos/makefiles/tweak.mk
