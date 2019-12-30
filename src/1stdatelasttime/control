@@ -1,10 +1,9 @@
-Package: com.yourcompany.1stdatelasttime
+Package: com.zimcodes.1stdatelasttime
 Name: 1stDateLastTime
 Depends: mobilesubstrate
+Version: 0.0.1
 Architecture: iphoneos-arm
 Description: In your lockscreen, Time is the first to hide. Then the Date follows. 
 Maintainer: Zim
 Author: Zim
 Section: Tweaks
-Version: 0.0.1-2+debug
-Installed-Size: 136

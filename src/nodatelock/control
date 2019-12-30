@@ -1,4 +1,4 @@
-Package: com.yourcompany.nodatelock
+Package: com.zimcodes.nodatelock
 Name: NoDateLock
 Depends: mobilesubstrate
 Version: 0.0.1
